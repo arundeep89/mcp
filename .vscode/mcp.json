@@ -10,12 +10,7 @@
     "servers": {
         "time": {
             "command": "docker",
-            "args": [
-                "run",
-                "-i",
-                "--rm",
-                "mcp/time"
-            ]
+            "args": ["run", "-i", "--rm", "mcp/time"]
         },
         "github": {
             "command": "docker",
