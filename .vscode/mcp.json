@@ -1,12 +1,4 @@
 {
-    "inputs": [
-        {
-            "type": "promptString",
-            "id": "github_token",
-            "description": "GitHub Personal Access Token",
-            "password": true
-        }
-    ],
     "servers": {
         "time": {
             "command": "docker",
@@ -16,7 +8,7 @@
             "command": "docker",
             "args": ["run", "-i", "--rm", "mcp/github"],
             "env": {
-                "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
+                "GITHUB_PERSONAL_ACCESS_TOKEN": "${github_token}"
             }
         },
         "terminal_server": {
